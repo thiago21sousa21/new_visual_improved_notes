@@ -1,0 +1,65 @@
+estudos vim:
+
+o vim tem modos:
+	normal
+	inserção
+	comandos
+	visual
+O modo normal:
+	ele é mais focado em navegação
+
+	tem comandos de alguns tipos:
+	
+	h e l : movimentam para esquerda e direia
+	j e k : movimentam para cima e para baixo
+
+		linha: 
+			w : pula pro inicio da proxima palavra
+			e : pula pro fim da proxima palavra
+			b : pula pro inicio da palavra anterior
+
+			$: vai pro final da linha
+			0: vai pro começo da linha
+			^: vai pro começo da linha no primeiro caractere não vazio
+		
+		navegação:
+			{ : vai pro inicio dos paragrafos
+			} : vai pro fim dos paragrafos
+			gg: vai para o inicio do arquivo
+			G : vai para o final do arquivo
+			ctrl + u: vai subindo a tela
+			ctrl + d: vai descendo a tela
+
+O modo de inserção:
+	são comandos que do modo normal passam pro modo de inserção
+
+	i: entra antes do cursor
+	a: entra depois do cursor
+	I: entra no inicio da linha
+	A: entra no final da linha
+	o: entra criando uma linha em baixo
+	O: entra criando uma linha em cima
+	
+SOBRE  EDITAR O TEXTO:
+	temos alguns tipos:
+	excluir , copiar ou colar , desfazer ou fazer
+
+	de excluir:
+		x, dd, dw, d$
+		x: exclui o caractere sob o cursor
+		dd: exclui a linha inteira
+		dw: exclui da posição atual até o final da palavra
+		d$: exclui do cursor até o final da linha
+	
+	de copiar ou colar:
+		temos: yy, y$, p, P
+		yy: copia (yank) a linha atual
+		y$: copia do cursor até o final da linha
+		p: cola após os cursor
+		P: cola antes do cursor
+		P: cola antes do cursor	
+
+	de desfazer e fazer:
+		temos: u, ctrl + r
+		u: desfaz a ultima ação
+		ctrl + r: refaz a ultima ação desfeita
